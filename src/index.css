@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-size: 14px !important;
+}
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.text-black {
+  color: #5c5b5b !important ;
+}
+.text-purple {
+  color: #4d148c;
+}
+/* navbar */
+.navbar-img {
+  width: 90px;
+}
+
+.nav-link,
+signupNav {
+  color: white !important;
+  text-decoration: underline;
+}
+
+.brad-left::placeholder {
+  color: white !important;
+}
+
+.brad-right:hover {
+  background-color: white !important;
+}
+.brad-right:hover .fa {
+  color: black !important;
+}
+/* homepage */
+.form-inline {
+  position: relative;
+  margin-bottom: 1.5rem auto;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  bottom: 10;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  opacity: 0.5;
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+  font-size: 50%;
+  transform: translate3d(0, -120%, 0);
+  opacity: 1;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.btn-orange {
+  background-color: #ff6200 !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+.bg-lightG {
+  background-color: rgb(212, 212, 212);
+}
+/* LOADERCSS */
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+/* loader ends */
+
+Link,
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.card-text {
+  /* font-size: 0.8rem; */
+  line-height: 0.8rem;
+}
+
+.underline {
+  height: 2px;
+  width: 100%;
+  background: rgb(207, 207, 207);
+}
+.bg-purple {
+  background-color: #4d148c;
+}
+
+.expandMe {
+  width: 80% !important;
+}
+.dropdown-menu {
+  width: 250px !important;
+}
+#header {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.014),
+      rgba(255, 255, 255, 0)
+    ),
+    url("./imgs/Banner.jpg") center/cover no-repeat fixed;
+}
+
+@media screen and (min-width: 480px) {
+  .fl {
+    width: 500px !important;
+  }
+  .expandMe {
+    width: 800px !important;
+  }
+  .brad-left {
+    border-top-left-radius: 30px !important;
+    border-bottom-left-radius: 30px !important;
+  }
+  .brad-right {
+    border-top-right-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+}
+
+/* CONNECTED LINES */
+.conLine {
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  border-radius: 1em;
+  background-color: #4d148c;
+  margin: 0 1em;
+  display: inline-block;
+  color: #4d148c;
+  position: relative;
+}
+
+.conLine::before {
+  content: "";
+  position: absolute;
+  top: 0.9em;
+  left: -4em;
+  width: 4em;
+  height: 0.2em;
+  background: #4d148c;
+  color: #4d148c;
+  z-index: -1;
+}
+
+.conLine:first-child::before {
+  display: none;
+}
+
+.active {
+  background: #4d148c;
+  color: white;
+}
+
+.active ~ .conLine {
+  background: #4d148c;
+}
+
+.active ~ .conLine::before {
+  background: #4d148c;
+  color: #4d148c;
+}
